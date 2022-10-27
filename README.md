@@ -1,10 +1,8 @@
 # Simple Utility Tools (Built in python using PySimpleGUI 
 
-Simple overview of use/purpose.
-
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+random python tools created over time as a software developer. This may just be the first one i add, or more over time. who knows
 
 ## Getting Started
 
