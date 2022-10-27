@@ -1,4 +1,4 @@
-# Simple Utility Tools (Built in python using PySimpleGUI)
+# Simple Utility Tools
 
 ## Description
 
