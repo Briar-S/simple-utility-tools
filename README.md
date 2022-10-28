@@ -23,7 +23,7 @@ pip install pysimplegui
 * Install dependencies above
 * You should now be able to build / run any .py project file with code below in a terminal or compiler of choice
 ```
-py .\text_file_compare_util.py
+py .\{util_name_here}.py
 ```
 
 ## License
