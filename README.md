@@ -32,7 +32,7 @@ pip install pysimplegui
 * Install dependencies above
 * You should now be able to build / run any .py project file with code below in a terminal or compiler of choice
 ```
-py .\{util_name_here}.py
+py C:\Your\Path\Here\util_name_here.py
 ```
 
 ## License
