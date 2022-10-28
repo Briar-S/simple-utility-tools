@@ -2,7 +2,9 @@
 
 ## About
 
-Some utilities created over time as a software developer. This may just be the first one i add, or more over time. who knows
+Some utilities created over time in software development. This may just be the first one i add, or more over time. who knows
+
+#### Why?
 
 ### Screenshots
 
