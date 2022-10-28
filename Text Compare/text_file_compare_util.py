@@ -57,7 +57,7 @@ while True:
     if any((button != 'Submit', f1 == '', f2 == '', f3 == '')):
         sg.popup_error('Error, likely missing a file path in selection')
 
-    if(f1 != '' and f2 != '' and f3 != ''):
+    if(button == 'Submit' and f1 != '' and f2 != '' and f3 != ''):
         CompareFiles(f1, f2, f3, values['-swap-'], values['-overwrite-'])
         sg.popup('Files Compared Successfully')
 window.close()
