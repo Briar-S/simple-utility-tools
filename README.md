@@ -12,7 +12,7 @@ Some utilities created over time as a software developer. This may just be the f
 
 ### Dependencies
 
-* [Python 3](https://www.python.org/) (Latest preffered)
+* [Python 3](https://www.python.org/) (Latest prefered)
 
 * [PySimpleGUI](www.pysimplegui.org) (run following in terminal of choice)
 ```
