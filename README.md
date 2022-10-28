@@ -26,5 +26,4 @@ py .\text_file_compare_util.py
 
 Contributors names and contact info
 
-ex. Briar Sanders  
-ex. [@_Brorr](https://twitter.com/_Brorr)
+Briar Sanders [@_Brorr](https://twitter.com/_Brorr)
