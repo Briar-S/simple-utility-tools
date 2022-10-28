@@ -14,4 +14,7 @@ random python tools created over time as a software developer. This may just be 
 ```
 pip install pysimplegui
 ```
-*You should now be able to build / run any .py project file with ```py .\text_file_compare_util.py``` or compiler of choice
+*You should now be able to build / run any .py project file with code below or compiler of choice
+```
+py .\text_file_compare_util.py
+```
