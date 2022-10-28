@@ -22,8 +22,10 @@ pip install pysimplegui
 py .\text_file_compare_util.py
 ```
 
-## Authors
-
-Contributors names and contact info
+## Author
 
 Briar Sanders [@_Brorr](https://twitter.com/_Brorr)
+
+## License
+
+This project is licensed under the [MIT] License - see the LICENSE.md file for details
