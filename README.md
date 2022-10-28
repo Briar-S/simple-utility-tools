@@ -3,7 +3,8 @@
 ## About
 
 random python tools created over time as a software developer. This may just be the first one i add, or more over time. who knows
-
+### Screenshots
+![Text Compare](/main/Meta/Screenshots/textcompare.png?raw=true "Optional Title")
 ## Getting Started
 
 ### Dependencies
