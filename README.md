@@ -9,5 +9,5 @@ random python tools created over time as a software developer. This may just be 
 ### Dependencies
 
 * Python 3.10
-'''pip install pysimplegui'''
+```pip install pysimplegui```
 * PySimpleGUI
