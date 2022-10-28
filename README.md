@@ -30,7 +30,7 @@ pip install pysimplegui
 
 ### Executing program
 * Install dependencies above
-* You should now be able to build / run any .py project file with code below in a terminal or compiler of choice
+* You should now be able to build / run any .py project file with your compiler of choice, or by running the code below in a terminal
 ```
 py C:\Your\Path\Here\util_name_here.py
 ```
