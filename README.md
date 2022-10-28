@@ -21,3 +21,10 @@ pip install pysimplegui
 ```
 py .\text_file_compare_util.py
 ```
+
+## Authors
+
+Contributors names and contact info
+
+ex. Briar Sanders  
+ex. [@_Brorr](https://twitter.com/_Brorr)
