@@ -2,9 +2,16 @@
 
 ## About
 
-Some utilities created over time in software development. This may just be the first one i add, or more over time. who knows
+* Some utilities created over time in software development
+  * This will likely include some forks/clones of other peoples projects as well
 
 #### Why?
+* Because although finding some of these tools is easy, finding ones that are 'safe' enough for corporate environments is not.
+* These aim of these utilities is to create tools that are:
+  * Easy to edit for different, individual situations
+  * Lightweight enough so that they can be installed on most machines
+  * Safe enough for corporate IT to allow you to use them
+  * Simple enough that people unfamiliar with programming can still use them
 
 ### Screenshots
 
