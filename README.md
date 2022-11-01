@@ -15,7 +15,7 @@
 
 ### Screenshots
 
-![Text Compare](/Meta/Screenshots/textcompare.png?raw=true "Optional Title")
+![Text Compare](/Meta/Screenshots/textcompare.png?raw=true "txtcompare screenshot")
 
 ## Getting Started
 
