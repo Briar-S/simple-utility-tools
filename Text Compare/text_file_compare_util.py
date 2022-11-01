@@ -3,7 +3,6 @@ import os
 class TextCompareUtility():
     sg.theme('Light Grey 6')
 
-
     def CreateWindow(self):
         #This creates the basic layout of the window using pysimpleGUI and returns a draw created window object
         #Just works. if you know PySimpleGUI go ahead and change it to your desire
@@ -29,8 +28,12 @@ class TextCompareUtility():
         #anyways this snippet below basically does what readlines should do anyway and adds a \n to the end of the last line, but that means at the end you gotta truncate it off if you wanna restore the files to the original but yeah anyways im still mad i thought writing this would make me feel better but really just made me more mad because of how dum that is in a so called "smart language" like wahtever man im over it now. nvm not over it why am i writing this in python i shouldve just done a stupid c# project instead that stuff is less frustrating anyways why am i still typing here. tbh its prob bc its sortve funny and long comments make me laugh. oh well. banana. apple. penguin. words. ight im done now i think.
         with open(f1,'a+') as fone:
             fone.write('\n')
+            fone.seek(0)
+            curFile = fone.readlines()
         with open(f2,'a+') as ftwo:
             ftwo.write('\n')
+            ftwo.seek(0)
+            oldFile = ftwo.readlines()
         
         #stores 2 lists based on the files you wanna compare
         curF = open(f1, "r")
@@ -58,7 +61,7 @@ class TextCompareUtility():
         else:
             outF = open(f3, "a")
 
-        outF.write("\n=================\n")
+        outF.write("=================\n")
         #swap flag that swaps the list var names basically and prints a title for the output
         #TODO: add a flag that puts title card on comparison happening or not
         if(swap == True):
@@ -66,7 +69,7 @@ class TextCompareUtility():
             curFile, oldFile = oldFile, curFile #yay you love to see this actually work which python feels like it rarely does for me which is maybe because python is just annoying to me for some reason idk, screw data scientists for making this language so quick, but so frustrating for complexish things, like literally any other language takes so much longer to setup, and pythong is so quick to setup but python i swear just takes so much longer to write but yeah also why is python so anal about whitespace, like thats so stupid, its just extra storage being taken up. i mean its a minimal amount compared to how bloated python programs end up being anyways
         else:
             outF.write("Following lines exist in " + f2 + " but not in " + f1)
-        outF.write("\n=================\n")
+        outF.write("\n-----------------\n")
         
         #actual comparison is super easy, but getting files setup in python is not, ironically.
         #this just calls count(string) for one of the lists, and sees if its zero, meaning the line in the foreach is unique.
@@ -74,24 +77,21 @@ class TextCompareUtility():
         for line in oldFile: 
             if (curFile.count(line) == 0 and line != '' and line != None and line != ' ' and line !='\n'):
                 outF.write(line)
-
         outF.close()
 
     def Functionality(self):
         window = self.CreateWindow()
         while True:
             button, values = window.read()#Reads the window object values stored when interacting with the window
-
-            f1, f2, f3 = values['-file1-'], values['-file2-'], values['-file3-'] #stores file paths gotten from the window
-
+            
             if any((button == 'Cancel', button == "Exit", button == sg.WIN_CLOSED)): #if X, or cancel pressed, break loop (closes window)
                 break
 
-            elif any((button != 'Submit', f1 == '', f2 == '', f3 == '')): #if a path isnt filled out, toss an error message (Dont close window)
+            elif any((button != 'Submit', values['-file1-'] == '', values['-file2-'] == '', values['-file3-'] == '')): #if a path isnt filled out, toss an error message (Dont close window)
                 sg.popup_error('Error, likely missing a file path in selection')
 
-            elif(button == 'Submit' and f1 != '' and f2 != '' and f3 != ''):
-                self.CompareFiles(f1, f2, f3, values['-swap-'], values['-overwrite-'])
+            elif(button == 'Submit' and values['-file1-'] != '' and values['-file2-'] != '' and values['-file3-'] != ''):
+                self.CompareFiles(values['-file1-'], values['-file2-'], values['-file3-'], values['-swap-'], values['-overwrite-'])
                 sg.popup('Files Compared Successfully')
 
         window.close()
